@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("assets/img/pomo.webp"); /*Hintergrundbild hinzufügen*/
+    background-size: cover;
+    background-position: left;
+}
+
+.timer-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+#timer-display {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.buttons button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #ff4949;
+}
+
+.buttons button:active {
+    background-color: #e63939;
+}
+.settings {
+    margin-top: 20px;
+}
+
+.settings label {
+    margin-right: 10px;
+}
+
+.settings input {
+    width: 50px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#round-counter {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+#session-status {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50; /* Grün für Work */
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+#session-status.break {
+    color: #FF6B6B; /* Rot für Break */
+}
